@@ -1,0 +1,12 @@
+<div class="chat-body">
+  <div class="chat" *ngFor="let item of messages | async">
+    <chat-right
+      [message]="item.message"
+      *ngIf="item.senderId === appService.username"
+    ></chat-right>
+    <chat-left
+      *ngIf="item.senderId !== appService.username"
+      [message]="item.message"
+    ></chat-left>
+  </div>
+</div>

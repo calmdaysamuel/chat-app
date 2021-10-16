@@ -1,0 +1,10 @@
+div.chat-body {
+  background-color: #f1f1f1;
+  display: grid;
+
+  gap: 16px;
+  padding: 24px 0px;
+  min-height: 300px;
+  max-height: calc(100vh - 200px);
+  overflow: scroll;
+}

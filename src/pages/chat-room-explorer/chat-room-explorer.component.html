@@ -1,0 +1,17 @@
+<div class="chat-room-explorer">
+  <div class="navbar">
+    <img
+      src="https://avatars.dicebear.com/api/micah/{{ appService.username }}.svg"
+      alt=""
+      class="room-logo"
+    />
+    <p class="name">{{ appService.username }}</p>
+  </div>
+  <div class="rooms">
+    <room-icon
+      (click)="goToRoom(item.id)"
+      *ngFor="let item of roomsService.rooms"
+      [name]="item.data().name"
+    ></room-icon>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="chat-page">
+  <div class="navbar">
+    <img
+      src="assets/back_arrow.svg"
+      alt=""
+      class="back-arrow"
+      (click)="toExplorePage()"
+    />
+    <img
+      src="https://avatars.dicebear.com/api/micah/{{ roomId }}.svg"
+      alt=""
+      class="room-logo"
+    />
+    <p class="name">{{ roomName }} Room</p>
+  </div>
+  <chat-body></chat-body>
+  <div class="chat-input">
+    <input
+      type="text"
+      name=""
+      id=""
+      placeholder="Send a Message"
+      [(ngModel)]="chatBox"
+      (keydown.enter)="sendMessage()"
+    />
+
+    <div class="sendbutton" (click)="sendMessage()">
+      <p>send</p>
+    </div>
+  </div>
+</div>

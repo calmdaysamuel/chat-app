@@ -1,0 +1,18 @@
+div.room {
+  padding: 6px 12px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &:hover {
+    background-color: darken(#ffffff, 5%);
+    cursor: pointer;
+  }
+}
+
+img.room-logo {
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+}

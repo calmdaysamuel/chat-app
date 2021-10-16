@@ -1,0 +1,52 @@
+div.chat-room-explorer {
+  margin: 16px auto;
+  width: 95%;
+  max-height: calc(100vh - 50px);
+  max-width: 500px;
+  border-radius: 16px;
+  overflow: scroll;
+  box-shadow: 0px 0px 40px -3px rgba(0, 0, 0, 0.1);
+}
+img.room-logo {
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+}
+img.back-arrow {
+  height: 16px;
+  width: 16px;
+  border-radius: 100%;
+  &:hover {
+    cursor: pointer;
+  }
+}
+div.navbar {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 16px;
+  position: sticky;
+  background-color: #ffffff;
+  top: 0px;
+}
+
+div.rooms {
+  padding: 6px 12px;
+  background-color: lighten(#f1f1f1, 15%);
+  overflow: scroll;
+}
+div.room {
+  padding: 6px 12px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &:hover {
+    background-color: darken(#ffffff, 5%);
+  }
+}
+
+p.name {
+  font-size: 20px;
+}
